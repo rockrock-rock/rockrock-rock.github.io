@@ -3,145 +3,174 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Muntu Phone Solutions</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <title>MUNTU PHONE SOLUTIONS</title>
   <style>
     body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-    header {
-      background-color: #1e1e2f;
-      color: white;
-      padding: 20px 0;
-      text-align: center;
-    }
-    nav {
-      background-color: #333;
-      display: flex;
-      justify-content: center;
-    }
-    nav a {
-      color: white;
-      padding: 14px 20px;
-      text-decoration: none;
-      transition: background 0.3s;
-    }
-    nav a:hover {
-      background-color: #575757;
-    }
-    .section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .section h2 {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    .services {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-    }
-    .service {
-      background: white;
-      padding: 20px;
-      margin: 10px;
-      flex: 1 1 250px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-    .service i {
-      font-size: 40px;
-      margin-bottom: 10px;
-      color: #1e1e2f;
-    }
-    footer {
-      background-color: #1e1e2f;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-    .contact-form input, .contact-form textarea {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-    }
-    .contact-form button {
-      background-color: #1e1e2f;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      cursor: pointer;
-    }
-    .contact-form button:hover {
-      background-color: #333;
-    }
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 1.5em 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+header p {
+  margin: 0.5em 0 0;
+  font-style: italic;
+}
+
+nav {
+  background-color: #34495e;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+nav li {
+  margin: 0.5em;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1em;
+  padding: 0.5em 1em;
+  display: inline-block;
+}
+
+nav a:hover {
+  background-color: #1abc9c;
+  border-radius: 5px;
+}
+
+main {
+  padding: 2em;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.card {
+  background-color: white;
+  padding: 1.5em;
+  margin-bottom: 1.5em;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+.card i {
+  color: #1abc9c;
+  margin-right: 0.5em;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1em;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+form {
+  background-color: white;
+  padding: 1.5em;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 0.8em;
+  margin-bottom: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #1abc9c;
+  color: white;
+  border: none;
+  padding: 0.8em 1.5em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #16a085;
+}
+
+footer {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+footer a {
+  color: #1abc9c;
+  text-decoration: none;
+}
+
+.social a {
+  margin: 0 0.5em;
+  color: white;
+  font-size: 1.5em;
+}
   </style>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
   <header>
-    <h1>Muntu Phone Solutions</h1>
-    <p>Your trusted partner in mobile technology</p>
+    <h1>MUNTU PHONE SOLUTIONS AND ACCESSORIES</h1>
+    <p>Software & Hardware Company</p>
   </header>
 
   <nav>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
+    <ul>
+      <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="#"><i class="fas fa-tools"></i> Services</a></li>
+      <li><a href="#"><i class="fas fa-images"></i> Gallery</a></li>
+      <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
+      <li><a href="#"><i class="fas fa-info-circle"></i> About</a></li>
+    </ul>
   </nav>
 
-  <section id="about" class="section">
-    <h2>About Us</h2>
-    <p>
-      Muntu Phone Solutions is a leading provider of mobile phone repairs, accessories, and tech support in East Africa. We specialize in Android and iOS devices, offering fast, reliable, and affordable services to individuals and businesses.
-    </p>
-  </section>
-
-  <section id="services" class="section">
-    <h2>Our Services</h2>
-    <div class="services">
-      <div class="service">
-        <i class="fas fa-tools"></i>
-        <h3>Phone Repairs</h3>
-        <p>We fix screens, batteries, charging ports, and more for all major brands.</p>
-      </div>
-      <div class="service">
-        <i class="fas fa-mobile-alt"></i>
-        <h3>Accessories</h3>
-        <p>Chargers, cases, screen protectors, and premium gadgets available.</p>
-      </div>
-      <div class="service">
-        <i class="fas fa-shield-alt"></i>
-        <h3>Device Protection</h3>
-        <p>Affordable insurance and protection plans for your mobile devices.</p>
-      </div>
-      <div class="service">
-        <i class="fas fa-headset"></i>
-        <h3>Tech Support</h3>
-        <p>Get expert help with software issues, updates, and troubleshooting.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="section">
-    <h2>Contact Us</h2>
-    <form class="contact-form">
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit"><i class="fas fa-paper-plane"></i> Send Message</button>
-    </form>
-  </section>
+  <main id="main-content"></main>
 
   <footer>
-    <p>&copy; 2025 Muntu Phone Solutions. All rights reserved.</p>
-    <p>Developed by <a href="https://goldenapplecoders-coder.github.io" style="color: #ffd700;">Golden Apple Technologies</a></p>
+    <div class="social">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+    <p>Developed by <strong>GOLDEN APPLE TECHNOLOGIES</strong></p>
+    <a href="https://goldenapplecoders-coder.github.io" target="_blank">Visit Us</a>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
