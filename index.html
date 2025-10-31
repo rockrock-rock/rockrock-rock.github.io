@@ -1,176 +1,447 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MUNTU PHONE SOLUTIONS</title>
-  <style>
-    body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUNTU PHONE SOLUTIONS AND ACCESSORIES</title>
+    <meta name="description" content="MUNTU PHONE SOLUTIONS AND ACCESSORIES - Your trusted partner for all phone software and hardware solutions. Developed by GOLDEN APPLE TECHNOLOGIES.">
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+      :root {
+    --primary: #1746a2;
+    --secondary: #f7c873;
+    --accent: #1c7c54;
+    --bg: #f6f9fb;
+    --white: #fff;
+    --dark: #222;
+    --shadow: 0 2px 8px rgba(23,70,162,0.07);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background: var(--bg);
+    color: var(--dark);
+    line-height: 1.6;
 }
 
 header {
-  background-color: #2c3e50;
-  color: white;
-  text-align: center;
-  padding: 1.5em 0;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 2em;
-}
-
-header p {
-  margin: 0.5em 0 0;
-  font-style: italic;
+    background: var(--primary);
+    color: var(--white);
+    box-shadow: var(--shadow);
 }
 
 nav {
-  background-color: #34495e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 4vw;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  padding: 0;
-  margin: 0;
-  flex-wrap: wrap;
+.logo {
+    font-size: 1.4rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    letter-spacing: 1px;
 }
 
-nav li {
-  margin: 0.5em;
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
 }
 
-nav a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.1em;
-  padding: 0.5em 1em;
-  display: inline-block;
+.nav-links a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
 }
 
-nav a:hover {
-  background-color: #1abc9c;
-  border-radius: 5px;
+.nav-links a:hover {
+    color: var(--secondary);
 }
 
-main {
-  padding: 2em;
-  max-width: 1000px;
-  margin: auto;
+.hero {
+    background: linear-gradient(120deg, var(--primary) 60%, var(--secondary) 100%);
+    color: var(--white);
+    padding: 4rem 2vw 3rem 2vw;
+    text-align: center;
 }
 
-.card {
-  background-color: white;
-  padding: 1.5em;
-  margin-bottom: 1.5em;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+.hero-content h1 {
+    font-size: 2.4rem;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+    font-weight: 700;
 }
 
-.card h2 {
-  margin-top: 0;
-  color: #2c3e50;
+.hero-content p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
 }
 
-.card i {
-  color: #1abc9c;
-  margin-right: 0.5em;
+.btn-main {
+    background: var(--accent);
+    color: var(--white);
+    padding: 0.7rem 2rem;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s;
+    box-shadow: var(--shadow);
 }
 
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1em;
+.btn-main:hover {
+    background: var(--secondary);
+    color: var(--primary);
 }
 
-.gallery img {
-  width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+.services {
+    padding: 3rem 2vw;
+    background: var(--white);
 }
 
-form {
-  background-color: white;
-  padding: 1.5em;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+.services h2 {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-size: 2rem;
+    color: var(--primary);
 }
 
-form input, form textarea {
-  width: 100%;
-  padding: 0.8em;
-  margin-bottom: 1em;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
 }
 
-form button {
-  background-color: #1abc9c;
-  color: white;
-  border: none;
-  padding: 0.8em 1.5em;
-  border-radius: 5px;
-  cursor: pointer;
+.service-card {
+    background: var(--bg);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    padding: 2rem 1.5rem;
+    flex: 1 1 220px;
+    max-width: 250px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
-form button:hover {
-  background-color: #16a085;
+.service-card:hover {
+    transform: translateY(-7px) scale(1.03);
+    box-shadow: 0 6px 24px rgba(23,70,162,0.14);
+}
+
+.service-card i {
+    font-size: 2.2rem;
+    color: var(--primary);
+    margin-bottom: 0.7rem;
+}
+
+.service-card h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.15rem;
+    color: var(--accent);
+}
+
+.service-card p {
+    font-size: 0.98rem;
+}
+
+.about {
+    padding: 3rem 2vw;
+    background: var(--bg);
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    padding: 2.3rem 2rem;
+}
+
+.about-content h2 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.about-content .highlight {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.about-content p {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    font-size: 1rem;
+}
+
+.contact {
+    padding: 3rem 2vw;
+    background: var(--white);
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--primary);
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contact-form {
+    flex: 1 1 300px;
+    background: var(--bg);
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+}
+
+.contact-form label {
+    font-weight: 500;
+    margin-bottom: 0.2rem;
+    color: var(--primary);
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.7rem;
+    border: 1px solid #d6e0eb;
+    border-radius: 6px;
+    font-size: 1rem;
+    background: var(--white);
+    resize: none;
+}
+
+.contact-form button {
+    background: var(--primary);
+    color: var(--white);
+    padding: 0.7rem;
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.contact-form button:hover {
+    background: var(--accent);
+}
+
+.contact-info {
+    flex: 1 1 210px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    font-size: 1.07rem;
+    color: var(--dark);
+}
+
+.contact-info i {
+    color: var(--primary);
+    margin-right: 0.6rem;
+}
+
+.socials {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.socials a {
+    color: var(--accent);
+    font-size: 1.7rem;
+    transition: color 0.2s;
+}
+
+.socials a:hover {
+    color: var(--primary);
 }
 
 footer {
-  background-color: #2c3e50;
-  color: white;
-  text-align: center;
-  padding: 1em;
+    background: var(--primary);
+    color: var(--white);
+    padding: 1.3rem 2vw;
+    text-align: center;
+    margin-top: 2rem;
 }
 
-footer a {
-  color: #1abc9c;
-  text-decoration: none;
+.footer-content {
+    font-size: 1rem;
+    letter-spacing: 0.5px;
 }
 
-.social a {
-  margin: 0 0.5em;
-  color: white;
-  font-size: 1.5em;
+.footer-content a {
+    color: var(--secondary);
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: 0.4rem;
 }
-  </style>
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+.footer-content a:hover {
+    color: var(--white);
+    text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+    .service-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 1.2rem;
+        padding: 1.2rem 2vw;
+    }
+    .hero-content h1 {
+        font-size: 1.3rem;
+    }
+
+    .services h2,
+    .about-content h2,
+    .contact h2 {
+        font-size: 1.3rem;
+    }
+}
+    </style>
 </head>
 <body>
-  <header>
-    <h1>MUNTU PHONE SOLUTIONS AND ACCESSORIES</h1>
-    <p>Software & Hardware Company</p>
-  </header>
-
-  <nav>
-    <ul>
-      <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
-      <li><a href="#"><i class="fas fa-tools"></i> Services</a></li>
-      <li><a href="#"><i class="fas fa-images"></i> Gallery</a></li>
-      <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
-      <li><a href="#"><i class="fas fa-info-circle"></i> About</a></li>
-    </ul>
-  </nav>
-
-  <main id="main-content"></main>
-
-  <footer>
-    <div class="social">
-      <a href="#"><i class="fab fa-facebook"></i></a>
-      <a href="#"><i class="fab fa-twitter"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
-    </div>
-    <p>Developed by <strong>GOLDEN APPLE TECHNOLOGIES</strong></p>
-    <a href="https://goldenapplecoders-coder.github.io" target="_blank">Visit Us</a>
-  </footer>
-
-  <script src="script.js"></script>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <span>MUNTU PHONE SOLUTIONS</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#services"><i class="fa-solid fa-cogs"></i> Services</a></li>
+                <li><a href="#about"><i class="fa-solid fa-users"></i> About</a></li>
+                <li><a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-content">
+            <h1><i class="fa-solid fa-phone-volume"></i> MUNTU PHONE SOLUTIONS AND ACCESSORIES</h1>
+            <p>Your one-stop shop for reliable software and hardware phone solutions.</p>
+            <a href="#contact" class="btn-main"><i class="fa-solid fa-comments"></i> Get in Touch</a>
+        </div>
+    </section>
+    <section id="services" class="services">
+        <h2><i class="fa-solid fa-toolbox"></i> Our Services</h2>
+        <div class="service-cards">
+            <div class="service-card">
+                <i class="fa-solid fa-microchip"></i>
+                <h3>Hardware Repairs</h3>
+                <p>Screen replacements, battery swaps, charging port repairs, and more for all major phone brands.</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-code"></i>
+                <h3>Software Solutions</h3>
+                <p>OS installation, phone unlocking, virus removal, firmware updates and data recovery.</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-headset"></i>
+                <h3>Technical Support</h3>
+                <p>Personalized support, troubleshooting, and expert advice to keep your device running smoothly.</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <h3>Accessories Sales</h3>
+                <p>Quality chargers, cases, screen protectors, earphones, and other genuine accessories at the best prices.</p>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2><i class="fa-solid fa-building"></i> About Us</h2>
+            <p>
+                <strong>MUNTU PHONE SOLUTIONS AND ACCESSORIES</strong> is a leading name in phone repairs and solutions, serving our community with excellence and integrity. 
+                As a <span class="highlight">SOFTWARE and HARDWARE COMPANY</span>, we are dedicated to providing the highest quality services and genuine accessories.
+            </p>
+            <p>
+                <i class="fa-solid fa-award"></i> Our team of certified technicians ensures every job is done right the first time. 
+                We pride ourselves on transparent pricing, fast turnaround, and outstanding customer care.
+            </p>
+            <p>
+                <i class="fa-solid fa-user-shield"></i> Trust MUNTU for all your phone needs, from the smallest fixes to the most complex solutions.
+            </p>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <h2><i class="fa-solid fa-envelope-open-text"></i> Contact Us</h2>
+        <div class="contact-container">
+            <form class="contact-form">
+                <label for="name"><i class="fa-solid fa-user"></i> Your Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email"><i class="fa-solid fa-at"></i> Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message"><i class="fa-solid fa-comment-dots"></i> Message</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+            </form>
+            <div class="contact-info">
+                <p><i class="fa-solid fa-location-dot"></i> 123 Main Street, YourCity</p>
+                <p><i class="fa-solid fa-phone"></i> +123 456 7890</p>
+                <p><i class="fa-solid fa-envelope"></i> info@muntuphonesolutions.com</p>
+                <div class="socials">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <span>Developed by 
+                <a href="https://goldenapplecoders-coder.github.io" target="_blank">
+                    <i class="fa-solid fa-apple-whole"></i> GOLDEN APPLE TECHNOLOGIES
+                </a>
+            </span>
+            <br>
+            <span>&copy; 2025 MUNTU PHONE SOLUTIONS AND ACCESSORIES. All rights reserved.</span>
+        </div>
+    </footer>
 </body>
 </html>
