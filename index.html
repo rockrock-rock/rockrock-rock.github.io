@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muntu Phone Solutions</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #1e1e2f;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    nav {
+      background-color: #333;
+      display: flex;
+      justify-content: center;
+    }
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background-color: #575757;
+    }
+    .section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .section h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    .service {
+      background: white;
+      padding: 20px;
+      margin: 10px;
+      flex: 1 1 250px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .service i {
+      font-size: 40px;
+      margin-bottom: 10px;
+      color: #1e1e2f;
+    }
+    footer {
+      background-color: #1e1e2f;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+    }
+    .contact-form button {
+      background-color: #1e1e2f;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+    .contact-form button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Muntu Phone Solutions</h1>
+    <p>Your trusted partner in mobile technology</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <p>
+      Muntu Phone Solutions is a leading provider of mobile phone repairs, accessories, and tech support in East Africa. We specialize in Android and iOS devices, offering fast, reliable, and affordable services to individuals and businesses.
+    </p>
+  </section>
+
+  <section id="services" class="section">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service">
+        <i class="fas fa-tools"></i>
+        <h3>Phone Repairs</h3>
+        <p>We fix screens, batteries, charging ports, and more for all major brands.</p>
+      </div>
+      <div class="service">
+        <i class="fas fa-mobile-alt"></i>
+        <h3>Accessories</h3>
+        <p>Chargers, cases, screen protectors, and premium gadgets available.</p>
+      </div>
+      <div class="service">
+        <i class="fas fa-shield-alt"></i>
+        <h3>Device Protection</h3>
+        <p>Affordable insurance and protection plans for your mobile devices.</p>
+      </div>
+      <div class="service">
+        <i class="fas fa-headset"></i>
+        <h3>Tech Support</h3>
+        <p>Get expert help with software issues, updates, and troubleshooting.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit"><i class="fas fa-paper-plane"></i> Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Muntu Phone Solutions. All rights reserved.</p>
+    <p>Developed by <a href="https://goldenapplecoders-coder.github.io" style="color: #ffd700;">Golden Apple Technologies</a></p>
+  </footer>
+
+</body>
+</html>
